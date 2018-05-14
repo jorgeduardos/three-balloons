@@ -1,16 +1,22 @@
-$mainFont: 'Sarala', sans-serif;
+$mainFont: 'Gothic A1', sans-serif;
 
 //color pallet #E0E2CE #38442B #828B65 #9AAF8C #FBFBFB
 $mainColor: #E0E2CE;
 
-
 *{
 	box-sizing: border-box;
 	font-family: $mainFont;
+	color: #424242;
 }
 
+//classes
+
+
+// SECTIONS
+
+
+//  ******************* HERO
 #hero{
-	font-family: $mainFont;
 	height: 100vh;
 	background-image: url("../css/imgs/SESAME_STREET_family_muppets_children_puppet_comedy_2560x1600.jpg");
 	background-size: cover;
@@ -18,5 +24,57 @@ $mainColor: #E0E2CE;
 	.logoHero{
 		margin: 30px 0 0 50px;
 		height: 450px;
+	}
+}
+
+// ******************* ABOUT
+
+#about{
+	height: 100vh;
+	position: relative;
+	// background-image: url("../css/imgs/finalAboutBkg.png");
+	// background-size: contain;
+	// background-repeat: no-repeat;
+	// background-position: 550px 0;
+	overflow: hidden;
+	img{
+		position: absolute;
+		bottom: 0;
+		right: -10%;
+		height: 1000px;
+		z-index: 0;
+	}
+	// img:nth-child(even){
+	// 	position: absolute;
+	// 	bottom:  -45%;
+	// 	right: 60%;
+	// 	z-index: -10;
+	// 	width: 500px;
+	// 	opacity: 0.2;
+	// }
+	div{
+		overflow:hidden;
+		z-index: 10;
+		div{
+			// width: 500px;
+			margin: 200px 0 0 300px;
+			hr{
+				border-color: #D8E3EC;
+				width: 5000px;
+				float: left;
+				z-index: -10;
+			}
+			h1{
+				width: 500px;
+			}
+			p{
+				width: 500px;
+				font-size: 1.3em;
+				line-height: 1.35;
+			}
+			p:nth-child(even){
+				width: 750px;
+			}
+		}
 	}
 }

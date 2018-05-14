@@ -1,14 +1,43 @@
 * {
   box-sizing: border-box;
-  font-family: "Sarala", sans-serif; }
+  font-family: "Gothic A1", sans-serif;
+  color: #424242; }
 
 #hero {
-  font-family: "Sarala", sans-serif;
   height: 100vh;
   background-image: url("../css/imgs/SESAME_STREET_family_muppets_children_puppet_comedy_2560x1600.jpg");
   background-size: cover; }
   #hero .logoHero {
     margin: 30px 0 0 50px;
     height: 450px; }
+
+#about {
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+  #about img {
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    height: 1000px;
+    z-index: 0; }
+  #about div {
+    overflow: hidden;
+    z-index: 10; }
+    #about div div {
+      margin: 200px 0 0 300px; }
+      #about div div hr {
+        border-color: #D8E3EC;
+        width: 5000px;
+        float: left;
+        z-index: -10; }
+      #about div div h1 {
+        width: 500px; }
+      #about div div p {
+        width: 500px;
+        font-size: 1.3em;
+        line-height: 1.35; }
+      #about div div p:nth-child(even) {
+        width: 750px; }
 
 /*# sourceMappingURL=style.css.map */
