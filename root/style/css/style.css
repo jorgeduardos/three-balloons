@@ -6,7 +6,8 @@
 #hero {
   height: 100vh;
   background-image: url("../css/imgs/SESAME_STREET_family_muppets_children_puppet_comedy_2560x1600.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: 0 25%; }
   #hero .logoHero {
     margin: 30px 0 0 50px;
     height: 450px; }
