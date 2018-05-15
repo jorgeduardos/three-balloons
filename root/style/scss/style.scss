@@ -32,10 +32,6 @@ $mainColor: #E0E2CE;
 #about{
 	height: 100vh;
 	position: relative;
-	// background-image: url("../css/imgs/finalAboutBkg.png");
-	// background-size: contain;
-	// background-repeat: no-repeat;
-	// background-position: 550px 0;
 	overflow: hidden;
 	img{
 		position: absolute;
@@ -44,14 +40,6 @@ $mainColor: #E0E2CE;
 		height: 1000px;
 		z-index: 0;
 	}
-	// img:nth-child(even){
-	// 	position: absolute;
-	// 	bottom:  -45%;
-	// 	right: 60%;
-	// 	z-index: -10;
-	// 	width: 500px;
-	// 	opacity: 0.2;
-	// }
 	div{
 		overflow:hidden;
 		z-index: 10;
@@ -65,7 +53,17 @@ $mainColor: #E0E2CE;
 				z-index: -10;
 			}
 			h1{
+				display: inline;
+				position: relative;
 				width: 500px;
+				font-size: 100px;
+				letter-spacing: -3px;
+				color: rgba(0,0,255,0.5);
+			}
+			h1:after{
+				content: "Who are we ?";
+				position: absolute; right: -2px; top: 2px;
+				color: rgba(255,0,0,0.5);
 			}
 			p{
 				width: 500px;
@@ -78,3 +76,33 @@ $mainColor: #E0E2CE;
 		}
 	}
 }
+
+// ********************** WHO
+
+#who{
+	height: 100vh;
+	position: relative;
+
+	img{
+		position: absolute;
+		bottom: 0;
+		right: 30%;
+		height: 950px;
+	}
+	div{
+		overflow: hidden;
+		div{
+			margin: 200px 300px 0 0;
+			float: right;
+			h2{
+				font-size: 2.5rem;
+			}
+			p{
+				width: 500px;
+				font-size: 1.3em;
+				line-height: 1.35;
+			}
+		}
+	}
+}
+
