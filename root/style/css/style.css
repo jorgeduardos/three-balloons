@@ -1,16 +1,20 @@
 * {
   box-sizing: border-box;
   font-family: "Gothic A1", sans-serif;
-  color: #424242; }
+  color: #424242;
+  margin: 0;
+  padding: 0; }
 
 #hero {
   height: 100vh;
-  background-image: url("../css/imgs/SESAME_STREET_family_muppets_children_puppet_comedy_2560x1600.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/imgs/Rats_Puppet_Show.jpg");
   background-size: cover;
   background-position: 0 25%; }
-  #hero .logoHero {
-    margin: 30px 0 0 50px;
-    height: 450px; }
+  #hero div {
+    width: 100%; }
+    #hero div .logoHero {
+      margin: 30px 0 0 50px;
+      height: 450px; }
 
 #about {
   height: 100vh;
@@ -54,22 +58,52 @@
 
 #who {
   height: 100vh;
-  position: relative; }
-  #who img {
+  position: relative;
+  overflow: hidden; }
+  #who #bkg-img {
     position: absolute;
     bottom: 0;
-    right: 30%;
-    height: 950px; }
+    right: 60%;
+    height: 850px; }
   #who div {
-    overflow: hidden; }
+    margin-top: 200px; }
     #who div div {
-      margin: 200px 300px 0 0;
-      float: right; }
+      padding-left: 1200px; }
+      #who div div hr {
+        border-color: #D8E3EC;
+        z-index: -10;
+        width: 1720px;
+        margin-left: -1300px; }
       #who div div h2 {
-        font-size: 2.5rem; }
+        font-size: 100px;
+        display: inline;
+        position: relative;
+        letter-spacing: -3px;
+        color: rgba(22, 55, 98, 0.7); }
+      #who div div h2:after {
+        content: "The Team";
+        position: absolute;
+        right: -5px;
+        top: 1px;
+        color: rgba(188, 148, 118, 0.5); }
       #who div div p {
         width: 500px;
         font-size: 1.3em;
         line-height: 1.35; }
+      #who div div #profile-pics-div {
+        width: 600px;
+        margin-top: 50px;
+        margin-left: -50px;
+        padding: 0; }
+        #who div div #profile-pics-div .prof-img-div {
+          width: 32%;
+          display: inline-block;
+          height: 100px;
+          width: 32%;
+          margin: 0;
+          padding: 0; }
+          #who div div #profile-pics-div .prof-img-div .profile-img {
+            height: 160px;
+            border-radius: 200px; }
 
 /*# sourceMappingURL=style.css.map */
