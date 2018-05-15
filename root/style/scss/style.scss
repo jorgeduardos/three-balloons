@@ -17,22 +17,89 @@ $mainColor: #E0E2CE;
 // SECTIONS
 
 
+
+// ******************** NAV
+
+nav{
+	position: fixed;
+	height: 90px;
+	top: 0;
+	width: 100vw;
+	background-color: #FFFFFF;
+	z-index: 999;
+	#logo{
+		height: 70px;
+		float: left;
+		margin: 10px 0 0 40px;
+	}
+	ul{
+		float: right;
+		margin-right: 50px;
+		margin-top: 30px;
+		font-size: 1.3em;
+		li{
+			display: inline-block;
+			margin-right: 15px;
+			color: #696767;
+			a{
+				text-decoration: none;
+				position: relative;
+				cursor: pointer;
+				font-weight: 500;
+			}
+			.bAcross:before{
+				content: "";
+				position: absolute;
+				height: 1px;
+				width: 100%;
+				bottom: 0;
+				background-color: #F36C24;
+				visibility: hidden;
+				transform: scaleX(0);
+				transition: all 0.25s ease-in-out 0s;
+			}
+			a:hover:before{
+				visibility: visible;
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+
 //  ******************* HERO
 #hero{
 	height: 100vh;
-	// background-image: url("../css/imgs/SESAME_STREET_family_muppets_children_puppet_comedy_2560x1600.jpg");
-	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../css/imgs/Rats_Puppet_Show.jpg");   
-	background-size: cover;
-	background-position: 0 25%;
-	div{
-		width: 100%;
-		.logoHero{
-			margin: 30px 0 0 50px;
-			// display: block;
-	  //   	margin-left: auto;
-	  // 	 	margin-right: auto;
-	  // 	 	padding-top: 200px;
-			height: 450px;
+	#hero-bkg-div{
+		height: 100%;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../css/imgs/Rats_Puppet_Show.jpg");   
+		background-size: cover;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		#quote-div{
+			height: 300px;
+			width: 600px;
+			background-color: transparent;
+			margin: 250px 0 0 200px;
+			blockquote{
+				color: #DCDCDC;
+				font-size: 2em;
+				font-style: italic;
+				line-height: 40px;
+				position: relative;
+			}
+			blockquote:before {
+			    content: open-quote;
+			    font-size: 2.7em;
+			    position: absolute;
+			    left: -60px;
+			    top: 10px;
+			}
+			blockquote:after {
+			    content: close-quote;
+			    font-size: 2.7em;
+			    position: absolute;
+			    bottom: -40px;
+			}
 		}
 	}
 }
@@ -130,20 +197,35 @@ $mainColor: #E0E2CE;
 			}
 			#profile-pics-div{
 				width: 600px;
+				height: 160px;
 				margin-top: 50px;
 				margin-left: -50px;
 				padding: 0;
 				.prof-img-div{
 					width: 32%;
+					height: inherit;
 					display: inline-block;
-					height: 100px;
-					width: 32%;
 					margin: 0;
 					padding: 0;
 					.profile-img{
 						height: 160px;
+						margin-left: 15px;
 						border-radius: 200px;
 					}
+				}
+			}
+			#member-info{
+				width: 700px;
+				margin: 15px 0 0 -70px;
+				padding: 0;
+				.member{
+					width: 700px;
+					padding: 0;
+					margin: 0;
+					display: none;
+				}
+				p{
+					width: 700px;
 				}
 			}
 		}

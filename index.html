@@ -4,7 +4,7 @@
 	<title>Three Balloons</title>
 	
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700" rel="stylesheet">
 	<!-- icons -->
 	<link href="https://unpkg.com/ionicons@4.0.0/dist/css/ionicons.min.css"rel="stylesheet"/>
 
@@ -14,10 +14,19 @@
 </head>
 <body>
 	<nav>
-		
+		<img src="root/style/css/imgs/cropped-Logo-water.png" alt="Three Balloons Logo" id="logo">
+		<ul>
+			<li><a class="bAcross">About</a></li>
+			<li><a class="bAcross">The Team</a></li>
+			<li><a class="bAcross">Gallery</a></li>
+			<li><a class="bAcross">Services</a></li>
+			<li><a class="bAcross">News</a></li>
+		</ul>
 	</nav>
 	<header id="hero">
-		<!-- <div><img src="root/style/css/imgs/cropped-Logo-water.png" alt="three balloons logo" class="logoHero"></div> -->
+		<div id="hero-bkg-div">
+			<div id="quote-div"><blockquote>There's nothing more satisfying than seeing a happy and smiling child. I always help in any way I can, even if it's just by signing an autograph. A child's smile is worth more than all the money in the world</blockquote></div>
+		</div>
 	</header>
 	<section id="about">
 		<img src="root/style/css/imgs/finalAboutBkg.png" alt="old man puppet">
@@ -39,9 +48,14 @@
 				<hr>
 				<p>We are a group of educators, puppeteers, mothers, and children psychologists passionate about children entertainment and education. Meet our founders and team members</p>
 				<div id="profile-pics-div">
-					<div class="prof-img-div"><img src="root/style/css/imgs/leonardo-perfil.jpg" alt="Leonardo" class="profile-img"></div>
-					<div class="prof-img-div"><img src="root/style/css/imgs/maise-perfil.png" alt="Maria Gisela" class="profile-img"></div>
-					<div class="prof-img-div"><img src="root/style/css/imgs/geraldine-perfil.jpg" alt="Geraldine" class="profile-img"></div>
+					<div class="prof-img-div leonardo-img"><img src="root/style/css/imgs/leonardo-perfil.jpg" alt="Leonardo" class="profile-img"></div>
+					<div class="prof-img-div maise-img"><img src="root/style/css/imgs/maise-perfil.png" alt="Maria Gisela" class="profile-img"></div>
+					<div class="prof-img-div geraldine-img"><img src="root/style/css/imgs/geraldine-perfil.jpg" alt="Geraldine" class="profile-img"></div>
+				</div>
+				<div id="member-info">
+					<div class="member leonardo"><p>Leonardo holds a Master’s degree in Educational Psychology and a Bachelor’s Degree in Education. Leonardo began his puppet career 16 years ago producing outstanding children’s productions that have been seen by hundreds of audiences across Venezuela and Houston with his former company Balalin Balalan. In addition to his work as a puppeteer and artistic writer/director, Leonardo has also been a drama teacher for Spanish-speaking children.</p></div>
+					<div class="member maise"><p>Maria holds a Bachelor’s Degree in Early Childhood Education and has about 8 years of experience working as a teacher for kids 0-5 years old in well-known schools in Venezuela and Houston. In her free time, Maria volunteers to help children with special needs and teaches Spanish for kids of all ages. Maria enjoys organizing activities so children can learn about the world, explore interests, and develop talents.</p></div>
+					<div class="member geraldine"><p>With a Bachelor’s degree in Chemical Engineering and a Master of Business Administration, Geraldine discovered her passion for children education and entertainment after having her first child, Victoria. Geraldine strongly believes that the well-being of society begins with the well-being of children and that play is critical to the healthy growth and development of kids. Geraldine spends all her free time playing with her daughter and creating fun activities, games, toys, and stories to provide Victoria and other children with the childhood they deserve.</p></div>
 				</div>
 			</div>
 		</div>
@@ -50,6 +64,11 @@
 		
 	</footer>
 
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="root/js/script.js"></script>
 </body>
