@@ -202,7 +202,6 @@ nav {
     width: 50vw;
     height: 90vh;
     margin-top: 110px;
-    border: 1px solid pink;
     text-align: center; }
     #services .services-container h3 {
       font-size: 100px;
@@ -216,6 +215,16 @@ nav {
       right: -5px;
       top: 1px;
       color: rgba(0, 0, 255, 0.5); }
+    #services .services-container .services-list .service-paragraph {
+      font-size: 1.5em; }
+    #services .services-container .services-list .row {
+      margin-top: 30px; }
+    #services .services-container .services-list .col-sm-4 img {
+      height: 80px;
+      margin-bottom: 10px; }
+    #services .services-container .services-list .col-sm-4 .feature {
+      font-size: 1em;
+      font-weight: 500; }
   #services #services-img {
     position: absolute;
     bottom: 0;
