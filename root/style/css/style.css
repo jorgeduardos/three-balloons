@@ -200,7 +200,7 @@ nav {
   position: relative; }
   #services .services-container {
     width: 50vw;
-    height: 90vh;
+    height: 60vh;
     margin-top: 110px;
     text-align: center; }
     #services .services-container h3 {
@@ -231,5 +231,11 @@ nav {
     right: 50%;
     left: 50%;
     height: 100vh; }
+  #services #map {
+    height: 40vh;
+    width: 100vw; }
+
+#contact {
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */
