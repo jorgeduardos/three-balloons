@@ -5,6 +5,13 @@
   margin: 0;
   padding: 0; }
 
+@keyframes arrow {
+  0% {
+    bottom: 2%; }
+  50% {
+    bottom: 1%; }
+  100% {
+    bottom: 2%; } }
 nav {
   position: fixed;
   height: 90px;
@@ -45,6 +52,7 @@ nav {
         transform: scaleX(1); }
 
 #hero {
+  position: relative;
   height: 100vh; }
   #hero #hero-bkg-div {
     height: 100%;
@@ -74,6 +82,16 @@ nav {
         font-size: 2.7em;
         position: absolute;
         bottom: -40px; }
+  #hero .arrow {
+    position: fixed;
+    bottom: 3%;
+    width: 100vw;
+    text-align: center;
+    animation: arrow 2s ease infinite; }
+    #hero .arrow .ion-md-arrow-down {
+      color: #fff;
+      font-size: 1.8em;
+      opacity: 0.8; }
 
 #about {
   height: 100vh;
@@ -176,5 +194,33 @@ nav {
           display: none; }
         #who div div #member-info p {
           width: 700px; }
+
+#services {
+  height: 100vh;
+  position: relative; }
+  #services .services-container {
+    width: 50vw;
+    height: 90vh;
+    margin-top: 110px;
+    border: 1px solid pink;
+    text-align: center; }
+    #services .services-container h3 {
+      font-size: 100px;
+      display: inline;
+      position: relative;
+      letter-spacing: -3px;
+      color: rgba(0, 255, 255, 0.7); }
+    #services .services-container h3:after {
+      content: "Services";
+      position: absolute;
+      right: -5px;
+      top: 1px;
+      color: rgba(0, 0, 255, 0.5); }
+  #services #services-img {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

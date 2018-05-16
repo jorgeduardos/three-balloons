@@ -16,6 +16,21 @@ $mainColor: #E0E2CE;
 
 // SECTIONS
 
+// *************** animations
+
+//arrow header
+@keyframes arrow{
+	0%{
+		bottom: 2%;
+	}
+	50%{
+		bottom: 1%;
+	}
+	100%{
+		bottom: 2%;
+	}
+}
+
 
 
 // ******************** NAV
@@ -68,6 +83,7 @@ nav{
 
 //  ******************* HERO
 #hero{
+	position: relative;
 	height: 100vh;
 	#hero-bkg-div{
 		height: 100%;
@@ -100,6 +116,18 @@ nav{
 			    position: absolute;
 			    bottom: -40px;
 			}
+		}
+	}
+	.arrow{
+		position: fixed;
+		bottom: 3%;
+		width: 100vw;
+		text-align: center;
+		animation: arrow 2s ease infinite;
+		.ion-md-arrow-down{
+			color: #fff;
+			font-size: 1.8em;
+			opacity: 0.8;
 		}
 	}
 }
@@ -229,6 +257,39 @@ nav{
 				}
 			}
 		}
+	}
+}
+
+// **************** SERVICES
+
+#services{
+	height: 100vh;
+	position: relative;
+	.services-container{
+		width: 50vw;
+		height: 90vh;
+		margin-top: 110px;
+		border: 1px solid pink;
+		text-align: center;
+		h3{
+				font-size: 100px;
+				display: inline;
+				position: relative;
+				letter-spacing: -3px;
+				color: rgba(0,255,255,0.7);
+			}
+		h3:after{
+			content: "Services";
+			position: absolute; right: -5px; top: 1px;
+			color: rgba(0,0,255,0.5);
+		}
+	}
+	#services-img{
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		left: 50%;
+		height: 100vh;
 	}
 }
 
