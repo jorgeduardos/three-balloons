@@ -83,7 +83,7 @@ nav {
         position: absolute;
         bottom: -40px; }
   #hero .arrow {
-    position: fixed;
+    position: absolute;
     bottom: 3%;
     width: 100vw;
     text-align: center;
@@ -235,7 +235,44 @@ nav {
     height: 40vh;
     width: 100vw; }
 
-#contact {
-  height: 100vh; }
+.contact {
+  margin-top: 150px;
+  text-align: center; }
+
+.contact .jumbotron {
+  height: 450px;
+  position: relative; }
+
+.contactLine {
+  display: block;
+  content: " ";
+  width: 150px;
+  height: 1px;
+  background-color: #F36C24;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.contact h2 {
+  font-size: 80px;
+  margin-bottom: 30px; }
+
+.contact p:nth-child(1) {
+  font-size: 0.9em; }
+
+#email-contact {
+  font-size: 1.3em;
+  font-weight: 500; }
+
+.input-group, #mensaje {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 60%; }
+
+#balloons-contact {
+  position: absolute;
+  height: 550px;
+  left: -16%;
+  top: -27%; }
 
 /*# sourceMappingURL=style.css.map */
