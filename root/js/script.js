@@ -18,3 +18,25 @@ function initMap(){
 
 }
 
+//NAV BAR ANIMATIONS
+
+	$('.js-nav-home').click(function(){
+       $('html, body').animate({scrollTop: $('.js-home').offset().top}, 1500);
+    });
+    
+    $('.js-nav-about').click(function(){
+       $('html, body').animate({scrollTop: $('.js-about').offset().top -80}, 1500);
+    });
+    
+    $('.js-nav-team').click(function(){
+       $('html, body').animate({scrollTop: $('.js-team').offset().top -20}, 1500); 
+    });
+    
+    $('.js-nav-services').click(function(){
+       $('html, body').animate({scrollTop: $('.js-services').offset().top -100}, 1500);  
+    });
+
+    $('.js-nav-contact').click(function(){
+       $('html, body').animate({scrollTop: $('.js-contact').offset().top -50}, 1500);  
+    });
+
