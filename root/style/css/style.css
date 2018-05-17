@@ -183,17 +183,9 @@ nav {
             height: 160px;
             margin-left: 15px;
             border-radius: 200px; }
-      #who div div #member-info {
-        width: 700px;
-        margin: 15px 0 0 -70px;
-        padding: 0; }
-        #who div div #member-info .member {
-          width: 700px;
-          padding: 0;
-          margin: 0;
-          display: none; }
-        #who div div #member-info p {
-          width: 700px; }
+
+#member-info {
+  height: 100vh; }
 
 #services {
   height: 100vh;
@@ -274,5 +266,28 @@ nav {
   height: 550px;
   left: -16%;
   top: -27%; }
+
+footer {
+  width: 100vw;
+  height: 150px;
+  margin-top: 92px; }
+  footer .footer-content {
+    height: 100%;
+    background-color: #00cec9;
+    text-align: center; }
+    footer .footer-content #logo-footer {
+      height: 110px;
+      margin-top: 15px; }
+    footer .footer-content .icon-container {
+      margin-top: 65px; }
+      footer .footer-content .icon-container .icon-row {
+        padding: 0 35px 0 310px; }
+      footer .footer-content .icon-container i {
+        font-size: 1.6em;
+        color: #fff; }
+    footer .footer-content .col-sm-4 h4 {
+      font-size: 1.1em;
+      color: #fff;
+      margin-top: 65px; }
 
 /*# sourceMappingURL=style.css.map */

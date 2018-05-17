@@ -242,22 +242,14 @@ nav{
 					}
 				}
 			}
-			#member-info{
-				width: 700px;
-				margin: 15px 0 0 -70px;
-				padding: 0;
-				.member{
-					width: 700px;
-					padding: 0;
-					margin: 0;
-					display: none;
-				}
-				p{
-					width: 700px;
-				}
-			}
 		}
 	}
+}
+
+//***************** MEMBER INFO
+
+#member-info{
+	height: 100vh
 }
 
 // **************** SERVICES
@@ -367,4 +359,32 @@ nav{
 
 //*********** FOOTER
 
-
+footer{
+	width: 100vw;
+	height: 150px;
+	margin-top: 92px;
+	.footer-content{
+		height: 100%;
+		background-color: #00cec9;
+		text-align: center;
+		#logo-footer{
+			height: 110px;
+			margin-top: 15px;
+		}
+		.icon-container{
+			margin-top: 65px;
+			.icon-row{
+				padding: 0 35px 0 310px;
+			}
+			i{
+				font-size: 1.6em;
+				color: #fff;
+			}
+		}
+		.col-sm-4 h4{
+			font-size: 1.1em;
+			color: #fff;
+			margin-top: 65px;
+		}
+	}
+}
