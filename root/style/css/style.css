@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0; }
 
+html {
+  overflow-x: hidden; }
+
 @keyframes arrow {
   0% {
     bottom: 2%; }
@@ -57,7 +60,8 @@ nav {
 
 #hero {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw; }
   #hero #hero-bkg-div {
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../css/imgs/Rats_Puppet_Show.jpg");
@@ -264,7 +268,7 @@ nav {
     width: 100vw; }
 
 .contact {
-  margin-top: 150px;
+  margin-top: 230px;
   text-align: center; }
 
 .contact .jumbotron {
@@ -299,9 +303,9 @@ nav {
 
 #balloons-contact {
   position: absolute;
-  height: 550px;
-  left: -16%;
-  top: -27%; }
+  height: 350px;
+  left: -4.5%;
+  top: -45%; }
 
 footer {
   width: 100vw;

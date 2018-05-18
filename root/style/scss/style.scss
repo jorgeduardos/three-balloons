@@ -11,6 +11,10 @@ $mainColor: #E0E2CE;
 	padding: 0;
 }
 
+html{
+	overflow-x:hidden;
+}
+
 //classes
 
 
@@ -90,6 +94,7 @@ nav{
 #hero{
 	position: relative;
 	height: 100vh;
+	width: 100vw;
 	#hero-bkg-div{
 		height: 100%;
 		background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../css/imgs/Rats_Puppet_Show.jpg");   
@@ -356,7 +361,7 @@ nav{
 // ********** CONTACT
 
 .contact{
-	margin-top: 150px;
+	margin-top: 230px;
 	text-align: center;
 }
 
@@ -398,9 +403,9 @@ nav{
 
 #balloons-contact{
 	position: absolute;
-	height: 550px;
-	left: -16%;
-	top: -27%;
+	height: 350px;
+	left: -4.5%;
+	top: -45%;
 }
 
 //*********** FOOTER
