@@ -152,7 +152,7 @@ nav{
 	background-color: #000;
 	opacity: 0.9;
 	z-index: 1000;
-	display: none;
+	visibility: hidden;
 	.icon-container{
 		font-size: 2em;
 		position: absolute;
@@ -165,6 +165,15 @@ nav{
 		}
 	}
 }
+
+#gallery.animated{
+	visibility: visible;
+}
+
+// #gallery.fadeOutRightBig{
+// 	visibility: hidden;
+// }
+
 
 
 // ******************* ABOUT

@@ -40,6 +40,22 @@
        $('html, body').animate({scrollTop: $('.js-contact').offset().top -50}, 1500);  
     });
 
+// gallery and team display
+
+    $('.js-nav-gallery').click(function(){
+        $('#gallery').addClass('animated fadeInRightBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('fadeInRightBig');
+       });
+    });
+
+    $('#gallery .icon-container').click(function(){
+       // $('#gallery').removeClass('animated fadeInRightBig');
+       $('#gallery').addClass('animated fadeOutRightBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass('animated fadeOutRightBig');
+       });
+       // $('#gallery').removeClass('animated fadeOutRightBig');
+    });
+
 
 //Animations
 

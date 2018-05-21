@@ -109,7 +109,7 @@ nav {
   background-color: #000;
   opacity: 0.9;
   z-index: 1000;
-  display: none; }
+  visibility: hidden; }
   #gallery .icon-container {
     font-size: 2em;
     position: absolute;
@@ -119,6 +119,9 @@ nav {
     #gallery .icon-container i {
       color: #FFFFFF;
       cursor: pointer; }
+
+#gallery.animated {
+  visibility: visible; }
 
 #about {
   height: 100vh;
