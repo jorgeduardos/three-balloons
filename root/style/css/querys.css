@@ -1,0 +1,278 @@
+/*@media only screen and (max-width: **px) {*/
+
+@media only screen and (max-width: 1550px) {
+	#about div div{
+		margin: 200px 0 0 100px;
+	}
+
+	#about div div p{
+		font-size: 1.15em;
+	}
+
+}
+
+@media only screen and (max-width: 1350px) {
+
+	#about div div p:nth-child(even){
+		width: 550px;
+	}
+
+	#who div div{
+		padding-left: 55vw; 
+	}
+}
+
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+	#hero #hero-bkg-div #quote-div{
+		width: 500px;
+		margin: 250px 0 0 100px;
+	}
+
+	#hero #hero-bkg-div #quote-div blockquote{
+		font-size: 1.7em;
+	}
+
+	#about div div p, #who div div p{
+		font-size: 1.1em;
+	}
+
+	#about div div h1, #who div div h2, #services .services-container h3{
+		font-size: 90px;
+	}
+
+	#who div div{
+		padding-left: 50vw;
+	}
+
+	#who #bkg-img{
+		left: 0;
+	}
+
+	#services #map{
+		height: 30vh;
+		/*margin-top: 90px;*/
+	}
+
+	.contact h2{
+		font-size: 70px;
+	}
+
+	#balloons-contact{
+		left: -5.5%;
+	}
+
+	#about, #who, #services{
+		height: auto;
+	}
+
+	#about img, #who #bkg-img{
+		height: 500px;
+	}
+
+	#services #services-img{
+		height: 80vh;
+	}
+
+	#services .services-container .services-list .service-paragraph{
+		font-size: 1.3em;
+	}
+
+	#services .services-container .services-list .col-sm-4 .feature{
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (max-width: 1040px) {
+
+	#hero #hero-bkg-div {
+		background-position-x: center;
+	}
+}
+
+@media only screen and (max-width: 991px){
+
+	#about div div h1, #who div div h2, #services .services-container h3{
+		font-size: 60px;
+	}
+
+	#about div div p, #who div div p{
+		font-size: 1em;
+	}
+
+	#about div div p{
+		width: 400px;
+	}
+
+	#about div div p:nth-child(even){
+		width: 450px;
+	}
+
+	#who div div {
+    	padding-left: 45vw;
+	}
+
+	#who div div #profile-pics-div .prof-img-div{
+		width: 25%;
+	}
+
+	#who div div #profile-pics-div .prof-img-div .profile-img{
+		height: 120px;
+	}
+
+    .contact .jumbotron{
+        height: auto;
+    }
+
+    #balloons-contact {
+    	left: -7.5%;
+    	top: -25%;
+	}
+
+	footer .footer-content .icon-container .icon-row {
+    	padding: 0;
+	}
+}
+
+@media only screen and (max-width: 890px) {
+
+	#about div div{
+		margin-top: 100px;
+	}
+	
+	#about div div p {
+    	width: 300px;
+	}
+
+	#about div div p:nth-child(even){
+		width: 300px;
+	}
+
+	#who div div p{
+		width: 400px;
+	}
+
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */                                           
+@media only screen and (max-width: 768px) {
+
+	#hero #hero-bkg-div #quote-div {
+    	width: 300px;
+	}
+
+	#hero #hero-bkg-div #quote-div blockquote {
+    	font-size: 1.4em;
+	}	
+
+	#who #bkg-img{
+		left: -10%;
+	}
+	
+	#services .services-container{
+		width: 100vw;
+	}
+
+	#services #services-img{
+		display: none;
+	}
+
+	#about div div {
+    	margin: 100px 0 0 30px;
+	}
+
+	#balloons-contact{
+		left: -10%;
+	}
+
+	.contact h2{
+		font-size: 50px;
+	}
+
+	.navBar{
+        display: none;
+    }
+
+    #mobile-nav-icon{
+        display: block;
+        background-color: #00cec9;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 670px) {
+	#about img{
+		right: -15%;
+	}
+
+	#balloons-contact{
+		display: none
+	}
+
+	#who div div p {
+    	width: 300px;
+	}
+
+	#who div div #profile-pics-div .prof-img-div {
+    	width: 20%;
+	}
+
+	#who #bkg-img {
+    	left: -15%;
+	}
+
+	.contact {
+    	margin-top: 80px;
+	}
+
+
+}
+
+@media only screen and (max-width: 575px) {
+	#services .services-container {
+    	height: auto;
+	}
+	
+	#services .services-container .col-sm-4{
+	    width: 33%;
+	}
+	body > footer > div > div > div > .col-sm-4{
+		width: 33.33%;
+	}
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+	#about div div {
+    	margin: 100px 0 0 12px;
+	}
+
+	#about div div p {
+    	width: 280px;
+	}
+
+	#about img{
+		right: -35%;
+	}
+
+	#who div div {
+	    padding-left: 0;
+	    margin: auto;
+	    width: 70%;
+	}
+		
+	#who #bkg-img {
+    	display: none;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 375px){}

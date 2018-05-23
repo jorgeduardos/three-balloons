@@ -16,10 +16,11 @@
 	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="root/style/css/style.css">
+	<link rel="stylesheet" href="root/style/css/querys.css">
 </head>
 <body>
 	<!-- NAVIGATION -->
-	<nav>
+	<nav class="navBar">
 		<img src="root/style/css/imgs/cropped-Logo-water.png" alt="Three Balloons Logo" id="logo" class="js-nav-home">
 		<ul>
 			<li><a class="bAcross js-nav-about">About</a></li>
@@ -29,6 +30,17 @@
 			<li><a class="bAcross js-nav-contact">Contact</a></li>
 		</ul>
 	</nav>
+	<nav class="mobile-nav">
+		<ul>
+			<li id="mobile-nav-upper"><img src="root/style/css/imgs/cropped-Logo-water.png" alt="Three Balloons Logo" id="logoNavbar" class="js-nav-home"></li>
+			<li><a class="bAcross js-nav-about">About</a></li>
+			<li><a class="bAcross js-nav-team">The Team</a></li>
+			<li><a class="bAcross js-nav-gallery">Gallery</a></li>
+			<li><a class="bAcross js-nav-services">Services</a></li>
+			<li><a class="bAcross js-nav-contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="mobile-nav-icon"><i class="menu_icon_mobile icon ion-md-menu"></i></div>
 	<!-- HERP -->
 	<header id="hero" class="js-home">
 		<div id="hero-bkg-div">
@@ -153,14 +165,14 @@
 			<div class="jumbotron">
 				<img id="balloons-contact" src="root/style/css/imgs/globos-tri-balloon.png" alt="balloons">
 				<div class="row">
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<h2>Contact Us</h2>
 					<p>If you have any questions, or if you would like to schedule a show do not hessitate to contact us by filling up the form below. You can also give us a call or, shooting us a message to our email.</p>
 					<div class="contactLine"></div>
 					<p class="contact-way">(832) 709-6992</p>
 					<p class="contact-way">sales@3balloons3.com</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<form method="post" action="php/phpMailerForms/contactMailer.php">
 						<div class="input-group input-group-lg">
 							<div class="input-group-prepend">

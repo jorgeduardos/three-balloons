@@ -56,6 +56,18 @@
        // $('#gallery').removeClass('animated fadeOutRightBig');
     });
 
+    $(".menu_icon_mobile").on("click", function(){
+    if($(this).hasClass("ion-md-menu")){
+      $(this).removeClass("ion-md-menu");
+      $(this).addClass("ion-md-close").show()
+      $(".mobile-nav").show("blind");
+    }else{
+      $(this).addClass("ion-md-menu");
+      $(this).removeClass("ion-md-close");
+      $(".mobile-nav").hide("blind");
+    }
+  });
+
 
 //Animations
 

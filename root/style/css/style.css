@@ -15,36 +15,36 @@ html {
     bottom: 1%; }
   100% {
     bottom: 2%; } }
-nav {
+.navBar {
   position: fixed;
   height: 90px;
   top: 0;
   width: 100vw;
   background-color: #FFFFFF;
   z-index: 999; }
-  nav #logo {
+  .navBar #logo {
     height: 70px;
     float: left;
     margin: 10px 0 0 40px;
     cursor: pointer; }
-  nav ul {
+  .navBar ul {
     float: right;
     margin-right: 50px;
     margin-top: 30px;
     font-size: 1.3em; }
-    nav ul li {
+    .navBar ul li {
       display: inline-block;
       margin-right: 15px;
       color: #696767; }
-      nav ul li a {
+      .navBar ul li a {
         text-decoration: none;
         position: relative;
         cursor: pointer;
         font-weight: 500; }
-      nav ul li .js-nav-gallery {
+      .navBar ul li .js-nav-gallery {
         text-decoration: none;
         color: #696767; }
-      nav ul li .bAcross:before {
+      .navBar ul li .bAcross:before {
         content: "";
         position: absolute;
         height: 1px;
@@ -54,9 +54,66 @@ nav {
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.25s ease-in-out 0s; }
-      nav ul li a:hover:before {
+      .navBar ul li a:hover:before {
         visibility: visible;
         transform: scaleX(1); }
+
+/***************** MOBILE NAVBAR **************/
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #FFFCF9;
+  text-align: center;
+  z-index: 9999;
+  display: none;
+  box-shadow: 15px 0 15px  #8A8A8A; }
+
+.mobile-nav ul {
+  text-align: center;
+  width: inherit;
+  padding-left: 10px;
+  font-size: 1.2em; }
+
+.mobile-nav li {
+  display: block;
+  width: 94%;
+  padding: 15px;
+  background-color: #00CEC9;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #000; }
+
+.mobile-nav li:hover {
+  background-color: #00BDB8; }
+
+#mobile-nav-upper {
+  background-color: #FFFCF9;
+  font-size: 130%;
+  text-align: left;
+  pointer-events: none; }
+
+#mobile-nav-icon {
+  background-color: #505050;
+  opacity: 0.8;
+  width: 30px;
+  position: fixed;
+  right: 7%;
+  top: 3%;
+  z-index: 100000;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  font-size: 1.3em; }
+
+#logoNavbar {
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 50px; }
 
 #hero {
   position: relative;
@@ -130,8 +187,8 @@ nav {
   #about img {
     position: absolute;
     bottom: 0;
-    right: -10%;
-    height: 1000px;
+    right: 0%;
+    height: 800px;
     z-index: 0; }
   #about div {
     overflow: hidden;
@@ -140,7 +197,7 @@ nav {
       margin: 200px 0 0 300px; }
       #about div div hr {
         border-color: #D8E3EC;
-        width: 0px;
+        width: 2000px;
         float: left;
         z-index: -10; }
       #about div div h1 {
@@ -175,7 +232,7 @@ nav {
   #who div {
     margin-top: 200px; }
     #who div div {
-      padding-left: 1200px; }
+      padding-left: 60vw; }
       #who div div hr {
         border-color: #D8E3EC;
         z-index: -10;
@@ -198,7 +255,10 @@ nav {
         font-size: 1.3em;
         line-height: 1.35; }
         #who div div p span {
+          cursor: pointer;
           font-size: 0.6em; }
+        #who div div p span:hover {
+          text-decoration: underline; }
       #who div div #profile-pics-div {
         width: 600px;
         height: 160px;
@@ -344,7 +404,7 @@ footer {
     footer .footer-content .icon-container {
       margin-top: 65px; }
       footer .footer-content .icon-container .icon-row {
-        padding: 0 35px 0 310px; }
+        padding: 0 35px 0 40%; }
       footer .footer-content .icon-container a {
         text-decoration: none; }
       footer .footer-content .icon-container i {
